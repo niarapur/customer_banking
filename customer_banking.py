@@ -17,14 +17,15 @@ def main():
     sav_mat = input(" Please enter the number of months the account held a balance: ")
     savings_maturity= int(sav_mat)
     # Call the create_savings_account function and pass the variables from the user.
-    updated_savings_balance, savings_interest_earned = create_savings_account(savings_balance, savings_interest, savings_maturity)
+    updated_sav_balance, savings_int_earned = create_savings_account(savings_balance, savings_interest, savings_maturity)
     # Print out the interest earned and updated savings account balance with interest earned for the given months.
     # ADD YOUR CODE HERE
-    new_savings_balance, savings_interest_earned = create_savings_account(savings_balance,savings_interest,savings_maturity)
+    updated_savings_balance = {':,'}.format(updated_sav_balance,".2f")
+    savings_interest_earned =format(savings_int_earned,".2f")
     print(f"Your current savings interest earned is: $",savings_interest_earned)
-    print(f"Based on the above interest , your current new savings balance is: ",new_savings_balance)
+    print(f"Based on the above interest , your current new savings balance is: $",updated_savings_balance)
     # Prompt the user to set the CD balance, interest rate, and months for the CD account.
-    # ADD YOUR CODE HERE
+    # ADD YOUR CODE HERE$
     cd_bal = input(f" Please enter your current CD balance: ")
     cd_balance = float(cd_bal)
     cd_int=input(f" Please enter your current CD interest rate in decimals e.g. for 1% enter 0.01: ")
