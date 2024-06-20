@@ -20,9 +20,6 @@ def create_savings_account(balance, interest_rate, months):
     SavingsAccount= Account(balance, interest_rate)
     SavingsAccount.set_balance(balance)
     SavingsAccount.set_interest(0)
-
-    print("curr bal:",SavingsAccount.balance)
-    print("curr interest:",SavingsAccount.interest)
     
     # Calculate interest earned
     total_interest_earned = (balance*interest_rate)*months
@@ -41,7 +38,3 @@ def create_savings_account(balance, interest_rate, months):
      #print("curr bal:",SavingsAccount.new_balance)
     #print("curr interest:",SavingsAccount.total_interest_earned)
 
-# check
-#newval =create_savings_account(25000,0.05,3)
-
-#print(f"The current balance in the savings account is ,{newval}")
