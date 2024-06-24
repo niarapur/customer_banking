@@ -23,7 +23,7 @@ def main():
     updated_savings_balance = '{:,.2f}'.format(updated_sav_balance)
     savings_interest_earned = '{:,.2f}'.format(savings_int_earned)
     print(f"Your current savings interest earned is: $",savings_interest_earned)
-    print(f"Based on the above interest , your current new savings balance is: $",updated_savings_balance)
+    print(f"Based on the above interest earned,your current new savings balance is: $",updated_savings_balance)
     # Prompt the user to set the CD balance, interest rate, and months for the CD account.
     # ADD YOUR CODE HERE$
     cd_bal = input(f" Please enter your current CD balance: ")
@@ -40,7 +40,7 @@ def main():
     updated_cd_balance = '{:,.2f}'.format(upd_cd_balance)
     cd_interest_earned = '{:,.2f}'.format(cd_int_earned)
     print(f"Your current CD interest earned is: $",cd_interest_earned)
-    print(f"Based on the above interest , your new CD balance is: $" ,updated_cd_balance)
+    print(f"Based on the above interest earned,your new CD balance is: $" ,updated_cd_balance)
 
 if __name__ == "__main__":
     # Call the main function.
